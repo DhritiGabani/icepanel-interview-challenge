@@ -1,10 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
-
+app.use(cors())
 // Replace with your actual connection string
 const mongoConnectionString = 'mongodb://localhost:27017/icepanelTechChoices';
 
